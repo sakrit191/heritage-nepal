@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heritage Nepal - Gallery</title>
+    <link rel="stylesheet" href="stylesgal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <span>📞 +01-4993290</span>
+            <a href="">"✉ info@Heritagenepal.edu.np"</a>
+            <span id="date-time"></span>
+            <span class="social-icons">
+              <a href="https://www.facebook.com/yadav.dikshit07"><img src="fb-icon.jpg" alt="Facebook"></a>
+                <a href="https://www.google.com/maps/search/oliz+store'/@27.672005,85.3465001,16z?entry=ttu"><img src="loc-icon.png" alt="Location"></a>
+            </span>
+        </div>
+        <div class="logo-bar">
+            <img src="logo.png" alt="Heritage Nepal Logo" class="logo">
+            <div>
+                <h1 class="animate__animated title">Heritage Nepal</h1>
+                <p class="animate__animated">Give travel a swing with us.</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="information.html">Information</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#" class="membership-button" id="membership-button">Membership</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="gallery">
+            <h2 class="animate__animated title">Photo Gallery</h2>
+            <table class="outer-table">
+                <tr>
+                    <td>
+                        <table class="inner-table">
+                            <tr>
+                                <td><img src="gallery images/photo1.jpg" alt="Photo 1" class="gallery-photo"></td>
+                                <td><img src="gallery images/photo2.jpg" alt="Photo 2" class="gallery-photo"></td>
+                            </tr>
+                            <tr>
+                                <td>March 27, 2024</td>
+                                <td>May 21, 2024</td>
+                            </tr>
+                            <tr>
+                                <td><img src="gallery images/photo3.jpg" alt="Photo 3" class="gallery-photo"></td>
+                                <td><img src="gallery images/photo4.jpg" alt="Photo 4" class="gallery-photo"></td>
+                            </tr>
+                            <tr>
+                                <td>February 6, 2023</td>
+                                <td>October 3, 2023</td>
+                            </tr>
+                            <tr>
+                                <td><img src="gallery images/photo5.jpg" alt="Photo 5" class="gallery-photo"></td>
+                                <td><img src="gallery images/photo6.jpg" alt="Photo 6" class="gallery-photo"></td>
+                            </tr>
+                            <tr>
+                                <td>August 5, 2023</td>
+                                <td>April 1, 2023</td>
+                            </tr>
+                            
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <div class="trademark">
+            <p>&copy; Heritage Nepal. Trademark by Dikshit Yadav</p>
+        </div>
+    </footer>
+
+    <!-- Membership Modal -->
+    <div id="membership-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Membership Registration</h2>
+            <form id="membership-form">
+                <div id="form-step-1">
+                    <table>
+                        <tr>
+                            <td><label for="fname">First Name:</label></td>
+                            <td><input type="text" id="fname" name="fname" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="lname">Last Name:</label></td>
+                            <td><input type="text" id="lname" name="lname" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="email">Email:</label></td>
+                            <td><input type="email" id="email" name="email" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="phone">Phone:</label></td>
+                            <td><input type="tel" id="phone" name="phone" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="address">Address:</label></td>
+                            <td><input type="text" id="address" name="address" required></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <h3>Additional Information</h3>
+                                <table>
+                                    <tr>
+                                        <td><label for="dob">Date of Birth:</label></td>
+                                        <td><input type="date" id="dob" name="dob" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="occupation">Occupation:</label></td>
+                                        <td><input type="text" id="occupation" name="occupation" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="interests">Interests:</label></td>
+                                        <td><textarea id="interests" name="interests" required></textarea></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="text-align: center;">
+                                <button type="button" id="next-button">Next</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="form-step-2" style="display: none;">
+                    <h3>Select Payment Method</h3>
+                    <label><input type="radio" name="payment-method" value="esewa" required> eSewa</label>
+                    <label><input type="radio" name="payment-method" value="visa" required> Visa Card</label>
+                    <label><input type="radio" name="payment-method" value="mastercard" required> Master Card</label>
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Image Popup Modal -->
+    <div id="image-popup" class="modal">
+        <span class="close-popup">&times;</span>
+        <img class="modal-content" id="popup-image">
+    </div>
+
+    <script src="scriptsgal.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heritage Nepal - Information</title>
+    <link rel="stylesheet" href="styleinformation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <span>📞 +01-4993290</span>
+            <a href="">✉ info@Heritagenepal.edu.np</a>
+            <span id="date-time"></span>
+            <span class="social-icons">
+                <a href="https://www.facebook.com/yadav.dikshit07"><img src="fb-icon.jpg" alt="Facebook"></a>
+                <a href="https://www.google.com/maps/search/oliz+store'/@27.672005,85.3465001,16z?entry=ttu"><img src="loc-icon.png" alt="Location"></a>
+            </span>
+        </div>
+        <div class="logo-bar">
+            <img src="logo.png" alt="Heritage Nepal Logo" class="logo">
+            <div>
+                <h1 class="animate__animated title">Heritage Nepal</h1>
+                <p class="animate__animated">Give travel a swing with us.</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="information.html">Information</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#" class="membership-button" id="membership-button">Membership</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="information">
+            <h2 class="animate__animated animate__zoomIn">Our Tour Packages</h2>
+            <div class="package-list">
+                <div class="package animate__animated animate__slideInLeft" data-package="ghandruk">
+                    <div class="thumbnail">
+                        <img src="info images/ghandruk.webp" alt="Ghandruk">
+                        <div class="description-overlay">Ghandruk Tour</div>
+                    </div>
+                </div>
+                <div class="package animate__animated animate__slideInRight" data-package="chitwan-lumbini">
+                    <div class="thumbnail">
+                        <img src="info images/chitwan-lumbini.webp" alt="Chitwan-Lumbini">
+                        <div class="description-overlay">Chitwan-Lumbini Tour</div>
+                    </div>
+                </div>
+                <div class="package animate__animated animate__slideInLeft" data-package="india-tour">
+                    <div class="thumbnail">
+                        <img src="info images/india-tour.webp" alt="India Tour">
+                        <div class="description-overlay">India Tour: Punjab, Delhi, Rajasthan</div>
+                    </div>
+                </div>
+                <div class="package animate__animated animate__slideInRight" data-package="bombay-goa-chennai">
+                    <div class="thumbnail">
+                        <img src="info images/bombay-goa-chennai.webp" alt="Bombay-Goa-Chennai">
+                        <div class="description-overlay">Bombay-Goa-Chennai Tour</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="trademark">
+            <p>&copy; Heritage Nepal. Trademark by Dikshit Yadav</p>
+        </div>
+    </footer>
+
+    <!-- Package Modal -->
+    <div id="package-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="package-title">Package Title</h2>
+            <p id="package-description">Package description will be here...</p>
+            <h3>Pricing Options</h3>
+            <ul id="pricing-options">
+                <!-- Pricing options will be populated here -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="scriptinformation.js"></script>
+</body>
+</html>
